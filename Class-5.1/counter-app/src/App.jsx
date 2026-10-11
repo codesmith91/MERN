@@ -4,7 +4,7 @@ import { useState } from "react";
 // let state = {
 //   count: 0        // you cant define state like this 
 // }
-
+// todo application
 function App() {
   const [count, setCount] = useState(0);
 
