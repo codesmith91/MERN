@@ -20,7 +20,7 @@ function App() {
 
  function addTodo(){
       setTodos([...todos, {  // spresd operator final aray gets added
-        id:counter++, 
+        id:counter++ , 
         title: Math.random(),
         description: Math.random()
       }])
@@ -29,8 +29,8 @@ function App() {
   return (
     <div>
       <button onClick={addTodo}>add a todo</button>
-      {todos.map(todo => <Todo title={todo.title} description={todo.description}/>)}
-    </div>
+      {todos.map(todo => <Todo key={todo.id} title={todo.title} description={todo.description}/>)} // learn about keyid
+     </div>
   )
 }
 
